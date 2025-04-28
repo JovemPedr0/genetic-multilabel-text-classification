@@ -1,8 +1,3 @@
-Claro! Vou criar um `README.md` bem organizado para o seu projeto.  
-Aqui está:
-
----
-
 # 📚 Classificação de Texto Multirrótulo com Classifier Chains e Algoritmo Genético
 
 Este projeto explora e compara técnicas de **classificação multirrótulo** usando **Classifier Chains** tradicionais e uma abordagem baseada em **Algoritmos Genéticos** para otimizar a ordem dos rótulos.
