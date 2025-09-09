@@ -76,8 +76,3 @@ jupyter notebook CC_GA+CC.ipynb
 
 Este projeto está licenciado sob a licença MIT.  
 Sinta-se livre para usar e modificar!
-
----
-
-### ✅ Quer que eu também te envie um `requirements.txt` baseado nas bibliotecas que seu código usa?  
-Isso já deixa o projeto ainda mais redondo! 🚀
