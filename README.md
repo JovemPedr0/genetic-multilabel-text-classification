@@ -1,56 +1,62 @@
-# 📚 Classificação de Texto Multirrótulo com Classifier Chains e Algoritmo Genético
+# 📚 Multi-label Text Classification with Classifier Chains and Genetic Algorithm
 
-Este projeto explora e compara técnicas de **classificação multirrótulo** usando **Classifier Chains** tradicionais e uma abordagem baseada em **Algoritmos Genéticos** para otimizar a ordem dos rótulos.
+This project explores and compares **multi-label classification** techniques using traditional **Classifier Chains** and an approach based on **Genetic Algorithms** to optimize the label order.
 
-## 🚀 Objetivo
+## 🚀 Objective
 
-Investigar se a otimização da ordem dos rótulos em Classifier Chains, utilizando Algoritmos Genéticos, pode melhorar o desempenho em tarefas de classificação de textos.
+To investigate whether optimizing the label order in Classifier Chains using Genetic Algorithms can improve performance in text classification tasks.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
-- Python 3.x
-- [Pandas](https://pandas.pydata.org/)
-- [NumPy](https://numpy.org/)
-- [scikit-learn](https://scikit-learn.org/stable/)
-- [Matplotlib](https://matplotlib.org/)
-- [Seaborn](https://seaborn.pydata.org/)
-- [tqdm](https://tqdm.github.io/)
+* Python 3.x
+* [Pandas](https://pandas.pydata.org/)
+* [NumPy](https://numpy.org/)
+* [scikit-learn](https://scikit-learn.org/stable/)
+* [Matplotlib](https://matplotlib.org/)
+* [Seaborn](https://seaborn.pydata.org/)
+* [tqdm](https://tqdm.github.io/)
 
-## 📁 Estrutura dos Dados
+## 📁 Data Structure
 
-Os dados devem estar organizados na seguinte estrutura:
+The data should be organized in the following structure:
 
 ```
 /data
   ├── train.csv
   └── test.csv
+
 ```
 
-Cada CSV deve conter pelo menos as colunas:
-- `TITLE` — título do texto
-- `ABSTRACT` — resumo ou corpo do texto
-- E as colunas de **rótulos** (targets).
+Each CSV must contain at least the following columns:
 
-**Observação**: A coluna `ID`, se existir, será descartada.
+* `TITLE` — title of the text
+* `ABSTRACT` — abstract or body of the text
+* And the **label** columns (targets).
 
-## 🧩 Etapas
+**Note**: The `ID` column, if it exists, will be dropped.
 
-1. **Pré-processamento dos Dados**  
-   - Remoção de colunas desnecessárias
-   - Preenchimento de valores nulos
-   - Vetorização de texto com **TF-IDF**
+## 🧩 Steps
 
-2. **Modelagem**
-   - **Classifier Chain** padrão usando regressão logística
-   - **Algoritmo Genético** para otimizar a ordem dos rótulos na cadeia
+1. **Data Preprocessing**
+* Removal of unnecessary columns
+* Filling missing values
+* Text vectorization using **TF-IDF**
 
-3. **Avaliação**
-   - Métricas usadas: F1-Score, Precisão, Revocação
-   - Matrizes de confusão multirrótulo
 
-## 📈 Resultados Esperados
+2. **Modeling**
+* Standard **Classifier Chain** using logistic regression
+* **Genetic Algorithm** to optimize the label order in the chain
 
-Comparações entre:
-- Classifier Chain com ordem natural dos rótulos
-- Classifier Chain com ordem otimizada via Algoritmo Genético
 
+3. **Evaluation**
+* Metrics used: F1-Score, Precision, Recall
+* Multi-label confusion matrices
+
+
+
+## 📈 Expected Results
+
+Comparisons between:
+
+* Classifier Chain with natural label order
+* Classifier Chain with label order optimized via Genetic Algorithm
